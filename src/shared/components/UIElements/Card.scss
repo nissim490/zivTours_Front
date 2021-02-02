@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  margin: 30px;
+  padding: 30px;
+  border: 20px;
+  box-shadow: 0 2px 8px  rgb(0, 0, 0);  
+ 
+  width: 350px;
+  height: 30rem;
+  overflow: hidden;
+ /*  border: 0.1px solid rgb(255, 0, 0); */
+  background:#ffffff;
+  
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+
+  .card {
+    position: relative;
+    margin: 30px;
+    padding: 30px;
+    border: 20px;
+    box-shadow: 0 2px 8px  rgb(0, 0, 0);   
+    /* border-radius:50px; */
+    width: 306px;
+    height: 60rem;
+    overflow: hidden;
+    
+   
+    background:rgb(255, 255, 255);
+    
+  }
+}

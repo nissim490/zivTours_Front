@@ -1,0 +1,268 @@
+
+ .flight-list {
+  list-style: none;
+  margin: 6rem auto;
+  padding: 1;
+  width: 90%;
+  margin-top: 15rem;
+ 
+  
+  
+} 
+.item {
+  width: 100%
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-container > div {
+  flex: 0 20%;
+  
+
+}
+
+.DatePeker {
+
+  list-style: none;
+  margin: 1rem auto;
+  padding: 1;
+  width: 62rem;
+  height: 35.5rem;
+  margin-top:8rem;
+  
+}
+.DatePeker1 {
+  list-style: none;
+  margin: 1rem auto;
+  padding: 1;
+  width: 32rem;
+  height: 37rem;
+  margin-top:8rem;
+  
+}
+.DayPicker_continer{
+  text-align: center;
+  margin-top: 0.5rem;
+  /* margin-left: -4rem; */
+  font-weight: 700;
+  width: 26rem;
+  box-shadow: 0 1.5rem 4rem #0a060624;
+/*   box-shadow: 0 1.5rem 4rem rgba(216, 168 ,168, 0.2); */
+/*   border-right: 1px solid rgb(180, 35, 35); 
+  border-left: 1px solid rgb(180, 35, 35);  */ 
+}
+
+
+.op2{
+
+  max-width: 20rem;
+  border-bottom: 3px solid transparent;
+  border-radius: 2%;
+  margin-top:5rem;
+  
+  
+}
+
+.inputButtonContiner{
+  max-width:20rem;
+  margin-top: -22rem;
+  margin-left: 31rem;
+  
+}
+.inputButtonCityContiner{
+  max-width:20rem;
+  margin-bottom: 1rem ;
+  margin-top: 6rem;
+  margin-left: 0rem;
+  
+}
+
+.op7{
+  
+  margin-bottom: 5rem ;
+  margin-top:10rem;
+  margin-left: 4rem;
+  margin-right: 8rem;
+}
+
+
+.button_search{
+
+  margin-bottom: 1rem ;
+  margin-top:-3rem;
+  margin-left:5rem;
+  
+}
+.Tours_search_radio{
+  margin-left: 0.6rem;
+}
+.Tours_search_lable{
+  margin-left: 1rem;
+  color:#b33c0d;
+}
+.Tours_search_continer{
+  display: flex;
+  flex-direction: row;
+}
+.Flights_search_lable{
+  color:#b33c0d;
+}
+
+.selectDatePlese{
+ font-size: 2ch;
+  color: rgb(255, 30, 0);
+ 
+    margin-top: 0.5rem;
+    margin-left: 0.7rem;
+  
+}
+.Flights_search_radio{
+  margin-left: 0.6rem;
+}
+
+.Flights_search_continer{
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+
+}
+.Switch_search_lable{
+  color:#b33c0d;
+}
+.Switch_search{
+
+  margin-left: 9rem;
+  margin-top: -2rem;
+  
+}
+.Switch_search_continer{
+
+
+ /*  margin-top: 2rem; */
+}
+
+.listRsultContiner{
+
+  margin-bottom: 3rem ;
+  margin-top:13rem;
+ 
+  
+}
+
+/* h1 {
+  color: #999999;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  } */
+  @media only screen and (max-width: 1500px)
+  {
+   
+    .flight-list {
+      list-style: none;
+     /*  margin: 1rem -7rem; */
+      padding: 1;
+      width: 117%;
+  }}
+  @media only screen and (max-width: 1100px)
+  {
+   
+    .flight-list {
+      list-style: none;
+     /*  margin: 1rem -7rem; */
+      padding: 1;
+      width: 160%;
+  }}
+  @media only screen and (max-width: 900px)
+  {
+   
+    .flight-list {
+      list-style: none;
+     /*  margin: 1rem -7rem; */
+      padding: 1;
+      width: 200%;
+  }}
+  @media only screen and (max-width: 769px)
+  {
+    .DayPicker_continer {
+   
+    width: 24rem;
+    box-shadow: none;
+}
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+    .flight-list {
+      list-style: none;
+     /*  margin: 1rem -7rem; */
+      padding: 1;
+      width: 90%;
+  }
+    .DatePeker {
+   
+      list-style: none;
+      margin: 1rem auto;
+      padding: 1;
+      width: 30rem;
+      height: 63rem;
+      margin-top:8rem;
+      
+  }
+  .DatePeker1 {
+    list-style: none;
+    margin: 1rem auto;
+    padding: 1;
+    width: 30rem;
+    height: 37rem;
+    margin-top:8rem;
+    
+}
+ /*  .DayPicker_continer {
+    text-align: center;
+   
+    margin-top: -40rem;
+    margin-left: -2rem;
+    font-weight: 700;
+} */
+.DayPicker {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.inputButtonContiner {
+  max-width: 20rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  margin-left: -1rem;
+}
+.inputButtonCityContiner {
+  margin-left: -1rem;
+}
+.flex-radio{
+margin-left: -1rem;
+}
+
+.op56 {
+ 
+  margin-left: -0.5rem;
+}
+  }
+
+  .DayPicker-wrapper {
+    position: relative;
+    flex-direction: row;
+    padding-bottom: 1em;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #c31b1b;
+  }

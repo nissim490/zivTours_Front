@@ -1,0 +1,65 @@
+{
+  "name": "my",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.1.2",
+    "@testing-library/user-event": "^12.2.2",
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "date-fns": "^2.16.1",
+    "expo": "^39.0.5",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.5.1",
+    "ndb": "^1.1.5",
+    "react": "^17.0.1",
+    "react-bulma-components": "^3.4.0",
+    "react-datepicker": "^3.3.0",
+    "react-day-picker": "^7.4.8",
+    "react-dom": "^17.0.1",
+    "react-native-ionicons": "^4.6.5",
+    "react-native-vector-icons": "^7.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "react-switch": "^5.0.1",
+    "react-transition-group": "^4.4.1",
+    "rsuite": "^4.8.4",
+    "validator": "^13.1.17",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w",
+    "start": "react-scripts start",
+    "debug": " ndb react-scripts",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/plugin-transform-react-jsx": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "gulp": "^4.0.2",
+    "node-sass": "^4.14.1"
+  }
+}
