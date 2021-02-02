@@ -17,7 +17,7 @@ const Besttour  = () => {
   const [mydata, setData] = useState(1);
   function getData(data){
     setData(mydata+1)
-    console.log(data);
+  
   }
     useEffect(() => {
       const fetchUsers = async () => {
@@ -29,14 +29,14 @@ const Besttour  = () => {
             url:  `${process.env.REACT_APP_BACKEND_URL}tours?`,
         //&user[ne]=${auth.userId}
           })
-          console.log( (auth.userId) )
+   
           setLoadedUsers(responseData.data.data.data);
           setIsLoading(false);
         } catch (err) {setIsLoading(false);}
       };
       fetchUsers();
     }, [mydata]);
-    console.log( loadedUsers )
+  
 
   return (
 <React.Fragment>

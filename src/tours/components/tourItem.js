@@ -10,7 +10,7 @@ import axios from 'axios'
 
 import  '../../shared/components/UIElements/Card.scss';
 const TourItem = props => {
-  //console.log(props)
+ 
   const auth = useContext(AuthContext);
   const [showMap, setShowMap] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
@@ -21,8 +21,7 @@ const TourItem = props => {
   };
   const addToListUserHandler = async() => {
 
-    //console.log(auth.userId);
-   // console.log(props.id);
+ 
    setShowAddModal(true);
 
     ///HTTP REQUEST
@@ -42,13 +41,13 @@ const TourItem = props => {
         
       }
     });
-      // console.log(responseData.data.data.data.user.map(user => user._id ));
+      
         let userArr =responseData.data.data.data.user.map(user => user._id )
         userArr.push(auth.userId);
-        //console.log(g);
+       
         userArr= new Set(userArr);
         userArr= Array.from(userArr);
-        //console.log(g);
+       
       ///HTTP REQUEST
       const  responseData1= await  axios({
         method: 'PATCH',
@@ -65,7 +64,7 @@ const TourItem = props => {
         if (error1.response) {
           if(error1.message==='Request failed with status code 401')
           error1.message='invaild email or password'
-          //console.log(error1.response.data.error.code);
+    
           if(error1.response.data.error.code===11000){
             error1.message='The email is in use'}
           throw error1;
@@ -121,7 +120,7 @@ var datePart =  check_in.match(/\d+/g),
         
       }
     });
-       //console.log(responseData.data.data.data.user.map(user => user._id ));
+      
        
      
         let userArr =responseData.data.data.data.user.map(user => user._id )

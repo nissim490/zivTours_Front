@@ -40,7 +40,7 @@ const NewFlight = () => {
 
   const flightubmitHandler = event => {
     event.preventDefault();
-    console.log(formState.inputs); // send this to the backend!
+  
   };
 
   return (

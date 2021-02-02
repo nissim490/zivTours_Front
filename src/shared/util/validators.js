@@ -47,8 +47,7 @@ export const validate = (value, validators) => {
       var password = document.getElementById("password").value;
       var confirmPassword = value;
       if (password != confirmPassword) {
-       // console.log(document.getElementById("password").value);
-       // console.log("Passwords do not match.");
+      
           isValid= false;
       }
       else

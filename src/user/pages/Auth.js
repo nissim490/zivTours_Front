@@ -77,7 +77,7 @@ const Auth = () => {
     if (isLoginMode) {
       
 
-        // console.log(formState.inputs.email.value)
+      
       try {
 
         const responseData = await sendRequest(
@@ -90,9 +90,9 @@ const Auth = () => {
       
         );
         
-        console.log(responseData.data);
+   
         auth.login(responseData.data.data.user._id, responseData.data.token,responseData.data.data.user.role );
-        //console.log( auth.role)
+      
 
         
       } catch (err) {   }

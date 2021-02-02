@@ -37,7 +37,7 @@ const DayPicker1  = () => {
     const auth = useContext(AuthContext);
     function getData(data){
       setData(mydata+1)
-      console.log(data);
+   
     }
    const handleChangeFlights = () =>{
     
@@ -88,7 +88,7 @@ const DayPicker1  = () => {
             
             })
             setLoadedUsers1(responseData1.data.data.data);
-            console.log(responseData1.data.data.data);
+         
             if(city){
             setLoadedUsers1( responseData1.data.data.data.filter(item => item.hotel_city=== city));
             }
@@ -120,7 +120,7 @@ const DayPicker1  = () => {
               for (var j=0; j< m[i].user.length;j++) {
                if(m[i].user[j]._id===auth.userId)
                n.push(m[i]._id)
-               console.log(n);
+              
         
               }
            
@@ -149,7 +149,7 @@ const DayPicker1  = () => {
               }
               if(!city)
              { 
-               console.log('jjj');
+            
               const  responseData= await  axios({
                 method: "get",
                 url:  `${process.env.REACT_APP_BACKEND_URL}flights?sort=price`,
@@ -160,7 +160,7 @@ const DayPicker1  = () => {
               if(responseData&&(price1.length!=0)){
               
                 setLoadedUsers( responseData.data.data.data.filter(item => item.price<= price1));
-                console.log(loadedUsers);
+              
                 }
               const  responseData1= await  axios({
                 method: "get",
@@ -210,12 +210,11 @@ const DayPicker1  = () => {
    if(typeof(document.getElementById("price").value==="number"&&document.getElementById("price").value.length!=0)){
     
         setPrice( document.getElementById("price").value) 
-      /*  console.log(price1); */
+    
         }
  
    
-/* console.log(document.getElementById("price").value==="number"); */
-  /*   console.log(price1.length); */
+
         setCity(temp)
       set(f)
         setT(t)
@@ -301,7 +300,7 @@ const DayPicker1  = () => {
           const range = DateUtils.addDayToRange(date, { from, to });
            
         
-        //  console.log(range.from+"88")
+      
           if(range.from==="Invalid Date")
           setFrom(new Date(2020-11-29));
   
@@ -314,7 +313,7 @@ const DayPicker1  = () => {
   
          if(range.to!=" null")
             d =range.to
-            console.log(typeof(d));
+            
          if(!!d)
          { d=  d.toLocaleDateString().replaceAll('.','-')
           var datePart =  d.match(/\d+/g),
@@ -329,7 +328,7 @@ const DayPicker1  = () => {
          
          }
          d= year+'-'+month+'-'+day;
-         console.log( "to"+d)
+      
        
          setT(d)
         
@@ -341,7 +340,6 @@ const DayPicker1  = () => {
          month = datePart[1],year= datePart[2];
       
          if(parseInt(month)<10){
-          console.log("typeof(month)");
           month='0'+month
          }
          
@@ -351,7 +349,7 @@ const DayPicker1  = () => {
          }
         
          b= year+'-'+month+'-'+day;
-          console.log("from" +b) 
+      
           set(b) 
   
          setTo(range.to);

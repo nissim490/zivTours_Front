@@ -9,7 +9,7 @@ import './flightItem.scss';
 import axios from 'axios'
 
 const FlightItem = props => {
-  //console.log(props)
+ 
   
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
   const auth = useContext(AuthContext);
@@ -28,7 +28,7 @@ const FlightItem = props => {
   const addToListUserHandler = async() => {
     setShowAddModal(true);
    
-    //console.log(props.id);
+    
     ///HTTP REQUEST
     const  responseData= await  axios({
       method: 'get',
@@ -46,14 +46,14 @@ const FlightItem = props => {
         
       }
     });
-       //console.log(responseData.data.data.data.user.map(user => user._id ));
+
        
      
         let userArr =responseData.data.data.data.user.map(user => user._id )
         setData(userArr)
         
         userArr.push(auth.userId);
-        console.log(userArr);
+        
         userArr= new Set(userArr);
         userArr= Array.from(userArr);
         

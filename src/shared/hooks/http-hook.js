@@ -11,7 +11,7 @@ export const useHttpClient = () => {
       setIsLoading(true);
       const httpAbortCtrl = new AbortController();
       activeHttpRequests.current.push(httpAbortCtrl);
-//console.log(body+"44")
+
 
 
       try {
@@ -40,8 +40,7 @@ export const useHttpClient = () => {
             
           }
         });
-        //debugger
-        //console.log(responseData)
+      
         
  
 

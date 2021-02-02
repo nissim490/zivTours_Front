@@ -23,7 +23,6 @@ const App = () => {
   const { token, login, logout, userId ,role} = useAuth();
  
   let routes;
-console.log(userId);
 
   if (token) {
    //debugger

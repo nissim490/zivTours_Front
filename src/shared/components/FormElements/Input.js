@@ -38,7 +38,6 @@ const Input = props => {
 
   const changeHandler = event => {
 
-//console.log(event.target);
 
     dispatch({
       type: 'CHANGE',

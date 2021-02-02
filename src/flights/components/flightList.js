@@ -6,7 +6,7 @@ import FlightItem from './flightItem';
 import './flightList.scss';
 
 const FlightList = props => {
- // console.log(props)
+
 
  
  

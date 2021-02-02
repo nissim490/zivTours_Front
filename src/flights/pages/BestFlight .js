@@ -17,7 +17,7 @@ const BestFlight  = () => {
   const auth = useContext(AuthContext);
   function getData(data){
     setData(mydata+1)
-    console.log(data);
+    
   }
     useEffect(() => {
       setIsLoading(true);
@@ -28,7 +28,7 @@ const BestFlight  = () => {
 
 //&user[ne]=${auth.userId}
 
-          console.log(process.env.REACT_APP_BACKEND_URL);
+         
            ///HTTP REQUEST
            const  responseData= await  axios({
             method: "get",
@@ -36,7 +36,7 @@ const BestFlight  = () => {
             
             
           })
-          console.log( (responseData.data.data.data) )
+         
           setLoadedUsers(responseData.data.data.data);
           setIsLoading(false);
         } catch (err) {setIsLoading(false);}

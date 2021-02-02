@@ -17,10 +17,10 @@ const UserList = () => {
  const [loadedUsers1, setLoadedUsers1] = useState();
  const auth = useContext(AuthContext);
  const [mydata, setData] = useState(0);
- //console.log(auth.userId);
+
  function getData(data){
   setData(mydata+1)
-  console.log(mydata+1);
+  
 }
  
  useEffect(() => {
@@ -36,7 +36,7 @@ const UserList = () => {
         url: ` ${process.env.REACT_APP_BACKEND_URL}tours/?user=${auth.userId}`,
         
       })
-    /*   console.log( (responseData1.data.data.data) ) */
+  
       setLoadedUsers1(responseData1.data.data.data);
           ///HTTP REQUEST
        const  responseData= await  axios({
@@ -44,7 +44,7 @@ const UserList = () => {
          url: ` ${process.env.REACT_APP_BACKEND_URL}flights/?user=${auth.userId}`,
          
        })
-  /*      console.log( (responseData.data.data.data) ) */
+ 
        setLoadedUsers(responseData.data.data.data);
        setIsLoading(false);
      } catch (err) {    setIsLoading(false);}

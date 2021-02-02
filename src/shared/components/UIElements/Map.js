@@ -20,8 +20,7 @@ const Map = props => {
             var longitude = results[0].geometry.location.lng();
         }
   
-        console.log(latitude);
-        console.log(longitude);
+       
   
        const myLatLng={lat: latitude, lng: longitude};
         const map = new window.google.maps.Map(mapRef.current, {

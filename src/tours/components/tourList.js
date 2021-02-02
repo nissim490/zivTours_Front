@@ -7,7 +7,7 @@ import Button from '../../shared/components/FormElements/Button';
 import './tourList.scss';
 
 const TourList = props => {
-  //console.log(props)
+
 
   if (props.items.length === 0) {
     return (
